@@ -11,6 +11,8 @@
   </head>
 
   <body>
+    <%= turbo_stream_from "online_users", channel: OnlineChannel %>
+
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= link_to_unless_current "Home", root_path %>
